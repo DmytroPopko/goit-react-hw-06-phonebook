@@ -7,9 +7,7 @@ export default function ContactForm({ onSubmit }) {
 
   const handleChange = event => {
     const { name, value } = event.target;
-    console.log(event.target.value);
-    console.log(options);
-
+  
     setOptions(prevState => ({ ...prevState, [name]: value }));
   };
 
